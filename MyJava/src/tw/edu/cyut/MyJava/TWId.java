@@ -41,7 +41,8 @@ public class TWId {
 	}
 	
 	static TWId createTWIdByString(String id) {
-		if (id.length()<10) {
+		
+		if (!isRightTWId(id)) {
 			return null;
 		}else {
 			return new TWId(id);
