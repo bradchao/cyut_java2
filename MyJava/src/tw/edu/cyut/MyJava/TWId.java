@@ -43,6 +43,7 @@ public class TWId {
 	static TWId createTWIdByString(String id) {
 		
 		if (!isRightTWId(id)) {
+			
 			return null;
 		}else {
 			return new TWId(id);
