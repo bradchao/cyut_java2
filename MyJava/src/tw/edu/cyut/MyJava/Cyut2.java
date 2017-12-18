@@ -8,24 +8,29 @@ public class Cyut2 {
 		System.out.println(score);
 		System.out.println(Math.PI);
 		
-		System.out.println(Bike.count);
-		Bike b1 = new Bike(2);
-		Bike b2 = new Bike(3);
-		Bike b3 = new Bike(4);
-		System.out.println(b1.speed);
-		System.out.println(b2.speed);
-		System.out.println(b3.speed);
-		System.out.println(Bike.count);
-		System.out.println(b2.count);
+		c1.sayYa();
+		c1.sayYa("Cyut");
+		c1.sayYa("ICE");
+		
+		int z = c2.fxy(3, 4);
+		System.out.println(z);
 		
 	}
 
 }
-class Bike {
-	double speed;
-	static int count;
-	Bike(double d){
-		speed = d;
-		count++;
+
+class c1 {
+	static void sayYa() {
+		System.out.println("Ya");
+	}
+	static void sayYa(String name) {
+		System.out.println("Ya, " +name);
 	}
 }
+class c2 {
+	static int fxy(int x, int y) {
+		int result = 2*x + y;
+		return result;
+	}
+}
+
