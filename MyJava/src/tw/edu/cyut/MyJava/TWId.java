@@ -20,6 +20,15 @@ public class TWId {
 		this.id = id;
 	}
 	
+	static boolean isRightTWId(String id) {
+		String letters = "ABCDEFGHJKLMNPQRSTUVXYWZIO";
+		String s12 = id.substring(0, 1);
+		int n12 = letters.indexOf(s12) + 10;
+		System.out.println(n12);
+		
+		return true;
+	}
+	
 	static TWId createTWIdByString(String id) {
 		if (id.length()<10) {
 			return null;

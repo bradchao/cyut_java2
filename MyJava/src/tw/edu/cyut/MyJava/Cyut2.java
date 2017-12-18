@@ -20,6 +20,9 @@ public class Cyut2 {
 		int z = c2.fxy(3, 4);
 		System.out.println(z);
 		
+		TWId.isRightTWId("Y123456789");
+		
+		
 	}
 
 }
